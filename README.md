@@ -1,12 +1,12 @@
 GPIO PADS control library for RaspberryPi2/3
 
 ## Function reference
-### SetGPIODriveLevel
+### SetGPIODriveStrength
 ```
-int SetGPIODriveLevel( GPIODriveLevel drive )
+int SetGPIODriveStrength( GPIODriveStrength drive )
 ```
 #### Parameters:  
-**drive**: 2mA-16mA, one of `GPIODriveLevel` enumerated type.
+**drive**: 2mA-16mA, one of `GPIODriveStrength` enumerated type.
 
 #### Return value:
 **0**: Success  
