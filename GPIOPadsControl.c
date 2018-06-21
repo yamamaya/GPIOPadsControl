@@ -42,7 +42,7 @@ static int InitializePADS() {
     return 0;
 }
 
-int SetGPIODriveLevel( GPIODriveLevel drive ) {
+int SetGPIODriveStrength( GPIODriveStrength drive ) {
     unsigned int v = (unsigned int)drive;
     if ( v > 7 ) {
         return 1;

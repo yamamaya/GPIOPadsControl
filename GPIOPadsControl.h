@@ -12,18 +12,18 @@
 #define PADS_BASE   (0x3F000000+0x00100000)
 #endif
 
-typedef enum _GPIODriveLevel {
-    GPIODriveLevel_2mA = 0,
-    GPIODriveLevel_4mA = 1,
-    GPIODriveLevel_6mA = 2,
-    GPIODriveLevel_8mA = 3,
-    GPIODriveLevel_10mA = 4,
-    GPIODriveLevel_12mA = 5,
-    GPIODriveLevel_14mA = 6,
-    GPIODriveLevel_16mA = 7
-} GPIODriveLevel;
+typedef enum _GPIODriveStrength {
+    GPIODriveStrength_2mA = 0,
+    GPIODriveStrength_4mA = 1,
+    GPIODriveStrength_6mA = 2,
+    GPIODriveStrength_8mA = 3,
+    GPIODriveStrength_10mA = 4,
+    GPIODriveStrength_12mA = 5,
+    GPIODriveStrength_14mA = 6,
+    GPIODriveStrength_16mA = 7
+} GPIODriveStrength;
 
-int SetGPIODriveLevel( GPIODriveLevel drive );
+int SetGPIODriveStrength( GPIODriveStrength drive );
 int SetGPIOHysteresis( bool flag );
 
 #endif
